@@ -1,0 +1,785 @@
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+header {
+	position: fixed;
+	background: #fff;
+	position: relative;
+	height: 50px;
+	border-top: 5px solid #004098;
+	border-bottom: 1px solid #cccccc;
+	width: 100%;
+}
+header .title img {
+	width: 35%;
+	padding: 10px;
+	max-width: 150px;
+}
+header .button-toggle {
+	position: absolute;
+	top: 0;
+	right: 2px;
+	float: left;
+	width: 33px;
+	height: 33px;
+	margin: 10px 3px;
+	color: #004098;
+	font-weight: 900;
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+header .m_left {
+	width: 50%;
+	float: left;
+}
+header .m_left li {
+	border-right: 1px solid #fff;
+}
+header .m_right {
+	width: 50%;
+	float: right;
+}
+header .menu {
+	position: absolute;
+	top: 51px;
+	width: 100%;
+	background: #004098;
+	color: #fff;
+	overflow: hidden;
+	font-size: 1.1em;
+	font-weight: bold;
+	z-index: 300;
+	line-height: 1.1em;
+}
+header .menu ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.menu li {
+	position: relative;
+}
+header .menu a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-bottom: 1px solid #fff;
+	height: 40px;
+	line-height: 40px;
+	background-image: url(../images/f_right_w.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	background-repeat: no-repeat;
+	background-position: 95% 50%;
+}
+header .menu a:hover {
+	background: rgba(255,255,255,0.2);
+}
+#login_cart {
+	width: 100%;
+	height: 50px;
+	line-height: 0;
+	clear: left;
+}
+/**/
+
+/*----------------------------------------------------------
+ログイン / マイページ展開用
+-----------------------------------------------------------*/
+/* flexbox リスト */
+.box_list {
+	border-top: 1px solid #000;
+}
+.box_list li {
+	border-top: 1px solid #525252;
+	border-bottom: 1px solid #000;
+}
+.box_list li, .box_list li a {
+	display: -webkit-box;
+	display: box;
+	display: -webkit-flex;
+	display: flex;
+	width: 100%;
+	position: relative;
+}
+.box_list li:nth-child(n+3) {
+	display: none;
+}
+
+/*カート*/
+.maypage_member, .new_member {
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	height: 40px;
+	margin: 0;
+	position: relative;
+}
+.maypage_member dt {
+	display: table-cell;
+	width: auto;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 30px;
+}
+.new_member dt {
+	display: table-cell;
+	width: 79%;
+	text-align: left;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.maypage_member dd, .new_member dd {
+	margin: 0px;
+	display: table-cell;
+	width: 30%;
+	vertical-align: bottom;
+	padding-bottom: 3px;
+	text-align: right;
+	padding-right: 10px;
+		position: relative;
+}
+
+.maypage_member .cart_kago span ,.new_member .cart_kago span {
+	background: url(../images/notice.png) no-repeat;
+	-webkit-baxkground-size:20px 20px;
+	background-size:20px 20px;
+	background-position: top;
+	padding: 3px 8px 8px 8px;
+	color: #fff;
+	font-size: 1.0em;
+	font-weight: bold;
+	position: absolute;
+	top: 3px;
+	right:23px;
+	z-index: 50;
+	text-align:center;
+}
+.cart_kago img {
+	width: 20%;
+	min-width: 20px;
+	max-width: 25px;
+}
+
+/*展開後会員名*/
+.head_style01 {
+	width: 60%;
+	font-size: 1.3em;
+	font-weight: normal;
+	position: relative;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+.head_style01 p{	background: url(../images/a_open.png) no-repeat 1px 2px;
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+
+	padding-left:15px;
+	width:100px;
+
+} 
+ .head_style01 p.active{	background: url(../images/a_close.png) no-repeat 1px 2px;
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	
+
+}
+
+.head_style01 .popup {
+	background: url(../images/notice.png) no-repeat top;
+	-webkit-background-size:20px 20px;
+	background-size:20px 20px;
+	padding: 3px 5px 3px 5px;
+	color: #fff;
+	font-size: 0.8em;
+	font-weight: bold;
+	position: absolute;
+	top: -2px;
+	left: -25px;
+	z-index: 50;
+}
+.head_style01 .img {
+	color: #fff;
+	background: url(../images/fukidashi.png) no-repeat top;
+		-webkit-background-size:20px 20px;
+	background-size:20px 20px;
+	padding: 5px;
+	position: absolute;
+	top: 0px;
+	left: -17px;
+	z-index: 30;
+	width: 25px;
+}
+.mypage .mypage_top {
+	display: table;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+.mypage .mypage_top li {
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
+}
+.mypage figure {
+	width: 15%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	line-height: 0;
+}
+.mypage figure img {
+	width: 100%;
+	height: auto;
+	min-width: 30px;
+}
+.mypage .info {
+	width: 80%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-left: 5px;
+}
+.mypage .info h2 {
+	font-size: 0.8em;
+	margin-bottom: 3px;
+	font-weight: normal;
+}
+.mypage .info p {
+	font-size: 1.3em;
+}
+.mypage .info .point {
+	font-size: 1.4em;
+}
+.mypage .mypage_manu, .mypage .mypage_btn {
+	width: 100%;
+	display: table;
+}
+.mypage .mypage_manu li {
+	width: 50%;
+	height: 35px;
+	display: table-cell;
+	vertical-align: middle;
+	padding-left: 10px;
+	font-size: 1.0em;
+	background-image: url(../images/f_right.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	background-position: 98% 65%;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+.mypage .mypage_manu .lir {
+	border-right: 1px solid #ccc;
+}
+.mypage .notice {
+	margin-left: 10px;
+	background: url(../images/notice.png) no-repeat;
+	-webkit-background-size:20px 29px;
+	background-size:20px 20px;
+	background-position: top;
+	padding: 4px 10px 5px 10px;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.mypage .mypage_btn li {
+	width: 50%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 1.0em;
+	color: #fff;
+	font-weight: bold;
+}
+.mypage .mypage_btn .btn_my a {
+	color: #fff;
+	background: #004098;
+	border-radius: 7px;
+	display: block;
+	height: 30px;
+	margin: 10px;
+	padding-top: 14px;
+}
+.mypage .mypage_btn .btn_out a {
+	color: #fff;
+	background: #000;
+	border-radius: 7px;
+	display: block;
+	height: 30px;
+	margin: 10px;
+	padding-top: 14px;
+}
+/*-----------------------------------------------------------
+検索＆カテゴリプルダウン
+-----------------------------------------------------------*/
+#searchBox1 {
+	margin:0 auto;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+	width: 100%;
+	height: 90px;
+	background: #f1f2f3;
+	vertical-align: middle;
+	clear: both;
+	position:relative;
+}
+#searchBox1 .text_area {
+	width: 93%;
+	height: 25px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2) inset;
+	border: 1px solid #ccc;
+	border-radius: 7px;        /* CSS3草案 */
+	-webkit-border-radius: 7px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 7px;   /* Firefox用 */
+	font-size:1.0em;
+	padding-left:10px ;
+	margin:10px 1% 10px 1%;
+	color:#B9B9B9;
+}
+
+
+#searchBox1Sub .sarchbox2 {
+	position:absolute;
+	top:50px;
+	left:77%;
+	height: 30px;
+	padding: 5px;
+	display: block;
+	background: #333;
+	color: #fff;
+	margin-left: 20px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 5px;
+	width: 15%;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+/* セレクトメニュー */
+.select_menu {
+	position: absolute;
+	top:50px;
+	left:1%;
+	display: table-cell;
+	margin-left: 0px;
+	width: 75%;
+}
+.select_menu:after {
+	top: 0;
+}
+.select_menu select {
+	width: 100%;
+	color: #000;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+	position: relative;
+	font-size: 1.2em;
+	border-radius: 7px;
+}
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+
+
+/*----
+カテゴリプルダウン
+---*/
+
+
+/*全体指定*/
+
+#footer_cat ul.accordion {
+	background: #FFF;
+	width: 100%;
+	margin: 0;
+	padding: 0px;
+}
+#footer_cat ul.accordion a{
+	display: block;
+	padding: 14px;
+	background-position: 97% center;
+	background-repeat: no-repeat;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+}
+/*
+#footer_cat ul.accordion span {
+	display: block;
+	padding: 18px 12px 5px 0px;
+	background-position: 97% 67%;
+	background-repeat: no-repeat;
+	color: #333;
+	border-top: #ccc 1px solid;
+	font-weight: bold;
+}*/
+
+/*タイトル*/
+
+#footer_cat ul.accordion ul {
+	display: none;
+}
+#footer_cat ul.accordion > li {
+	background: -moz-linear-gradient(top, #FFFFFF, #F3F3F3);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F3F3F3));
+	text-align: center;
+}
+#footer_cat ul.accordion > li > p {
+	background: -moz-linear-gradient(top, #FFFFFF, #F3F3F3);
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F3F3F3));
+	cursor: pointer;
+	height: 55px;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+#footer_cat ul.accordion > li > p span {
+	background-image: url(../images/f_bottom.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	display: block;
+	padding: 18px 12px 5px 0px;
+	background-position: 97% 67%;
+	background-repeat: no-repeat;
+	color: #333;
+	border-top: #ccc 1px solid;
+	font-weight: bold;
+
+}
+#footer_cat ul.accordion > li > p span.open {
+	background-image: url(../images/f_top.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+}
+
+/*1段目*/
+
+
+#footer_cat ul.accordion > li > ul > li {
+	background: #FFF;
+	border-bottom: 1px dotted #333;
+	font-size: 1.1em;
+}
+#footer_cat ul.accordion > li > ul > li > a{
+
+	background: url(../images/f_right.png) no-repeat 98% center;
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+}
+#footer_cat ul.accordion > li > ul > li > p {
+	background: #FFF;
+	display: block;
+	height:30px;
+}
+#footer_cat ul.accordion > li > ul > li > p span {
+	background-image: url(../images/f_bottom.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	display: block;
+	padding-top: 17px;
+	background-position: 98% center;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	margin:0px;
+	height:30px;
+}
+#footer_cat ul.accordion > li > ul > li > p span.open {
+	background-image: url(../images/f_top.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	border-bottom: 1px dotted #888;
+}
+
+/*2段目*/
+#footer_cat ul.accordion > li > ul > li > ul > li {
+	background: #f1f2f3;
+	border-bottom: 1px dotted #888;
+}
+#footer_cat ul.accordion > li > ul > li > ul > li > a {
+
+	background: url(../images/f_right.png) no-repeat 98% center;
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+}
+#footer_cat ul.accordion > li > ul > li > ul > li > p {
+	background: #F1F2F3;
+	display: block;
+	height:30px;
+}
+
+#footer_cat ul.accordion > li > ul > li  > ul > li > p span {
+	background-image: url(../images/f_bottom.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	display: block;
+	padding-top: 17px;
+	background-position: 98% center;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	margin:0px;
+	height:30px;
+}
+#footer_cat ul.accordion > li > ul > li  > ul > li > p span.open {
+	background-image: url(../images/f_top.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	border-bottom: 1px dotted #888;
+}
+
+/*3段目*/
+
+#footer_cat ul.accordion > li > ul > li > ul > li > ul > li {
+	background: #ccc;
+	border-bottom: 1px dotted #888;
+}
+
+#footer_cat ul.accordion > li > ul > li > ul > li > ul > li> a {
+	background: url(../images/f_right.png) no-repeat 98% center;
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+}
+
+#footer_cat ul.accordion > li > ul > li > ul > li > ul > li> p {
+	background: #F1F2F3;
+	display: block;
+	height:30px;
+}
+
+#footer_cat ul.accordion > li > ul > li  > ul > li >li> ul >  p span.open {
+	background-image: url(../images/f_top.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	border-bottom: 1px dotted #888;
+}
+
+#footer_cat ul.accordion > li > ul > li > ul > li > ul > li:last-child {
+	border: none;
+}
+
+
+/*4段目*/
+#footer_cat ul.accordion > li > ul > li > ul > li > ul > li> ul > li {
+	background: #FFF;
+	border-bottom: 1px dotted #888;
+}
+
+
+#footer_cat ul.accordion > li > ul > li > ul > li > ul > li> ul > li:last-child {
+	border: none;
+}
+
+/*----
+ブランド
+---*/
+.brand_nav ul {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	z-index: 1;
+}
+.brand_nav li {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	padding: 10px 20px 5px 20px;
+}
+.brand_nav .brand-r{
+	border-right: 1px solid #ccc;
+
+}
+.brand_nav li img {
+	width: 70%;
+}
+/*----
+ブランドここまで
+---*/
+
+/*----------------
+フッター要素
+------------------*/
+#news dl {
+	height: 10%;
+	margin-left: 1px;
+	font-size: 1.1em;
+	padding: 15px 0px;
+	padding-right:5%;
+	color: #000;
+	text-align: left;
+	width: 95%;
+	margin: 0;
+	border-bottom: #cccccc solid 1px;
+	background-image: url(../images/f_right.png);
+	-webkit-background-size:12px 12px;
+	background-size:12px 12px;
+	background-position: 98% 55%;
+	background-repeat: no-repeat;
+	display: table;
+}
+#news dt {
+	display: table-cell;
+	vertical-align:middle;
+	padding-left:2%;
+	width:15%;
+		text-a:left;
+	word-wrap: break-word;
+	max-width:60px;
+}
+#news .kiji{
+	display: table-cell;
+	text-align:left;
+	width:40%;
+	max-width:180px;
+	min-width:180px;
+	padding:0;
+	word-wrap: break-word;
+	
+	}
+#news .ns{
+	display: table-cell;
+	width:10%;}
+	
+.btn_type02 {
+	color: #fff;
+	background: #004098;
+	margin-top: 0px;
+	text-align: center;
+	height: 45px;
+	line-height: 45px;;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.btn_type04 div {
+	color: #000;
+	background: #f1f2f3;
+	margin-top: 0px;
+	text-align: center;
+	height: 50px;
+	padding-top: 10px;
+	line-height: 1.5em;
+	font-weight: bold;
+	font-size: 1.1em;
+	border-bottom: #cccccc solid 1px;
+}
+#footer {
+	background-color: #fff;
+	position: relative;
+	z-index: 0;
+	padding: 15px 0;
+	text-align: center;
+}
+#footer .f_logo {
+	margin: 0px;
+	color: #000;
+	line-height: 1.5em;
+	font-size: 0.8em;
+	background: #fff;
+}
+#footer .f_logo img {
+	width: 30%;
+}
+/*------------------------------------------------------------
+	パンくず
+------------------------------------------------------------*/
+
+#pankuzu{
+	width:100%;
+}
+
+#pankuzu #flame {
+	position: relative;
+	max-width: 1200px;
+	height: 40px;
+	overflow: hidden;
+	background: #f4f3f1;
+	border-bottom:#ccc 1px solid;
+}
+#pankuzu #pan_slider {
+	position: absolute;
+	cursor: move;
+	z-index: 0;
+	width: 900px;
+	height: 30px;
+}
+#pankuzu #pan_slider p {
+	float: left;
+	width: auto;
+	height: auto;
+	margin-left: 15px;
+	margin-right:5px;
+	padding: 5px;
+	text-align: center;
+	line-height: 30px;
+	position: relative;
+}
+#pankuzu #pan_slider p a {
+	font-size: 1.1em;
+	text-decoration: none;
+	color: #333;
+}
+#pankuzu #pan_slider p:before, #pan_slider p:after {
+	border: solid transparent;
+	content: ' ';
+	height: 0;
+	top: 0;
+	left: 100%;
+	position: absolute;
+	width: 0;
+}
+#pankuzu #pan_slider p:after {
+	border-width: 19px;
+	border-left: 11px solid #f4f3f1;
+	top: 1px;
+}
+#pankuzu #pan_slider p:before {
+	border-width: 20px;
+	border-left: 12px solid #666;
+	top: 0px;
+}
+
+/*
+*/
+
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1.2rem;
+	z-index:500;
+}
+#page-top a {
+    background:rgba(0,64,152,0.6);
+    text-decoration: none;
+    color: #fff;
+    width:80px;
+    padding: 23px 0 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+}
+#page-top a:hover {
+    text-decoration: none;
+    background: rgba(0,64,152,0.3);
+}
+
+
+
+
+/*------------------------------------------------------------
+	クリアフィクス
+------------------------------------------------------------*/
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.cf {
+	zoom: 1;
+}

@@ -1,0 +1,590 @@
+@charset "utf-8";
+/* CSS Document */
+
+#ItemDetails{
+	width:100%;
+	border-top:#00429E solid 5px;
+	padding-bottom:10px;
+}
+
+
+/*------------------------
+bxslider
+-------------------------*/
+.bxslider img {
+	width: 80%;
+	display: block;
+	margin:0 auto;
+	position:relative;
+}
+
+.bxslider .new {
+ position: absolute;
+ top: 0px;
+ left: 10%;
+ background: #DF031F;
+ font-size: 2rem;
+ color: #fff;
+ padding:3px 10px 3px 10px;
+}
+.bxslider .stock {
+ position: absolute;
+ top: 0px;
+ left: 10%;
+ background: #0A33B4; 
+ font-size: 2rem;
+ color: #fff;
+ padding:3px 10px 3px 10px;
+}
+/*------------------------
+item
+-------------------------*/
+#item{
+	width:100%;
+}
+#item .label_icon{
+	width:95%;
+	margin:0 auto;
+	border-top:1px solid #ccc;
+	padding-top:1rem;
+	
+}
+#item .label {
+	float: left;
+	margin:1% 1% 0 0;
+	padding:1% 2% 1% 2%;
+	border: 1px #ccc solid;
+	color:#000;
+	font-size: 1.0rem;
+}
+#item #price-sec {
+	width:95%;
+	clear:both;
+	margin:0 auto;
+	padding-top:1rem;
+
+}
+#item #price-sec .bland_name{
+	font-size:1.1rem;
+	word-wrap: break-word;
+	line-height:1.1rem;
+}
+#item #price-sec .item_name{
+	font-size:1.3rem;
+	word-wrap: break-word;
+}
+#item .price_on{
+	font-size:1rem;
+	line-height:1rem;
+	padding-top:1rem;
+	padding-bottom:1rem;
+		
+}
+
+#item #price-sec .price{
+	width:100%;
+	display:table;
+	font-weight:bold;
+	background:none;
+}
+
+#item #price-sec .price_off{
+	font-size:1.1rem;
+	background:#FF0004;
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+	color:#fff;
+	width:10%;
+	padding:1%;
+	letter-spacing:-0.1rem;
+}
+#item #price-sec .price_1{
+	width:85%;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	margin:0;
+	letter-spacing:-0.1rem;
+}
+#item #price-sec .price_name,#item #price-sec .price_spe{
+	vertical-align:central;
+	text-align:center;
+	color:#DF031F;
+	background:none;
+}
+#item #price-sec .price_name{
+	font-size:1.0srem;}
+	
+#item #price-sec .price_spe{
+	font-size:1.8rem;
+}
+#item #price-sec .black{
+	color:#000;
+}
+#item .point{
+	padding:1rem 0 1rem 0;
+	font-size:1rem;
+}
+#item .review{
+	width:35%;
+	display:table;
+	 margin-bottom:10px;
+
+}
+
+#item .review li{
+	display:table-cell;
+
+}
+#item .review li img{
+	width:30px;
+}
+#item .review .txt{
+	font-size:1rem;
+	text-decoration:underline;
+	vertical-align:center;
+}
+
+#color{
+	width:98%;
+	border-top:1px solid #ccc;	
+	margin:0 auto;
+}
+#color .txt{
+	margin-top:1rem;
+	margin-left:10px;
+	font-size:1.1rem;
+}
+.sku {
+	display:table;
+	width:100%;
+	text-align:center;
+	vertical-align:middle;
+}
+.sku li{
+	padding:0 2% 0 2%;
+	margin:0px;
+	display:table-cell;
+}
+   
+.sku .select img{
+	border:3px solid #DF031F;
+}
+.sku img{
+	width:100%;
+	border:3px solid #fff;
+}
+
+/*カートまわり*/
+
+#cart{
+	width:100%;
+	border-top:1px solid #ccc;
+	margin-top:10px;
+	padding-top:10px;
+}
+
+/* セレクトメニュー */
+
+.select_size {
+	margin: 0 auto;
+	width: 90%;
+	margin-bottom:10px;
+}
+.select_size:after {
+	top: 0;
+}
+.select_size select {
+	width: 100%;
+	color: #000;
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 1.2em;
+	border-radius: 7px;
+	margin-top:5px;
+}
+
+#cart_quantity{
+	display:table;
+	width:95%;
+	margin:0 auto;
+}
+
+#select_quantity {
+	margin: 0 auto;
+	width: 20%;
+	margin-bottom:10px;
+	display: table-cell;
+	vertical-align:middle;
+	text-align:center;
+}
+#select_quantity:after {
+	top: 0;
+}
+#select_quantity select {
+	width: 100%;
+	color: #000;
+	height: 30px;
+	line-height: 30px;
+	font-size: 1.2em;
+	border-radius: 7px;
+	vertical-align:middle;
+}
+
+#cart_quantity #suuryou{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:left;
+	width:10%;
+	font-size:1.2rem;
+}
+
+#cart_quantity #cart_in{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:right;
+	martin-left:10px;
+	width:70%;
+}
+#cart_quantity #cart_in img{
+	width:90%;
+	min-height:30px;
+}
+#cart_quantity #cart_in a{
+	border:none;
+}
+/*カート終り*/
+/*注意＆お気に入り*/
+.oshirase{
+	margin:0 auto;
+	margin-top:10px;
+	width:80%;
+	display:block;
+	text-align:center;
+	font-size:1.2rem;
+}
+.oshirase span{
+	font-size:1.4rem;
+	color:#DF031F;
+	font-weight:bold;
+}
+.fevorite{
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	width:95%;
+	display:block;
+	text-align:center;
+	font-size:1.2rem;
+	background:#f1f2f3;
+	padding:10px 5px;
+}
+.fevorite a{
+	text-decoration:underline;
+	font-size:1.4rem;
+}
+.zaiko_info{
+	display:table;
+	table-layout:fixed;
+	width:97%;
+	text-align:center;
+	margin:0 auto;
+}
+.zaiko_info p{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.zaiko_info a{
+	display:block;
+	font-size:1.2rem;
+	font-weight:bold;
+	color:#fff;
+	background:#ccc ;
+	padding-top:1rem;
+	padding-bottom:1rem;
+
+	text-align:center;
+	margin:0 2px 0 2px
+}
+/*#DF031Fおすすめ*/
+.staff_rec{
+	width:100%;
+	margin:0 auto;
+	margin-top:10px;
+}
+#staff_comment {
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	display:table;
+	vertical-align:middle;
+	
+}
+.staff_rec #le{
+	width:20%;
+	display:table-cell;
+	font-size:1.0rem;
+	vertical-align:middle;
+	text-align:center;
+}
+.staff_rec #ri{
+	width:80%;
+	display:table-cell;
+	font-size:1.2rem;
+	vertical-align:middle;
+	text-align:left;
+	padding:2px;
+
+}
+.staff_rec img {
+	width:70%;
+}
+.staff_rec .kiji_staff{
+	text-align:left;
+	font-size:1.4rem;
+	
+}
+
+/*商品サイズ・仕様*/
+
+.size_table_section{
+	width:100%;
+	margin-bottom:10px;
+}
+
+
+.size_table_section .syousai{
+	display:block;
+	padding:10px;
+	font-size:1em;
+
+}
+
+
+
+.size_table {
+	width: 100%;
+	text-align: left;
+	border: 1px solid #eee;
+	background-color: #ccc;
+	
+	border-collapse: separate;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.size_table th {
+	font-weight: normal;
+}
+.size_table thead th {
+	border-bottom: 1px solid #999999;
+	padding: 5px;
+}
+.size_table tbody th,
+.size_table tbody td {
+	padding: 5px 0px 5px 5px;
+	border-bottom: 1px solid #999999;
+	background-color: #f1f2f3;
+}
+.size_table tbody th{
+	width:5%;
+}
+.size_table tbody tr:nth-child(even) th,
+.size_table tbody tr:nth-child(even) td {
+	background-color: #fff;
+}
+.size_table tbody tr:last-child th,
+.size_table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+/*おりたたみJS*/
+.item_table{
+	font-size:1.4rem;
+	text-align:left;
+	padding-left:28px;
+	background:url(../../images/a_open.png) no-repeat 10px;
+		-webkit-background-size:14px 14px;
+	background-size:14px 14px;
+	text-decoration:underline;
+}
+.item_table.active{
+	font-size:1.4rem;
+	text-align:left;
+	padding-left:28px;
+	background:url(../../images/a_close.png) no-repeat 10px;
+		-webkit-background-size:14px 14px;
+	background-size:14px 14px;
+		text-decoration:underline;
+
+}
+
+.item_table_box
+ {
+	padding: 1px;
+	font-size: 87.5%;
+}
+.item_table_box h1 {
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+.item_table_box h1 span {
+	display:block;
+	color: orange;
+	font-weight: bold;
+}
+/* Foundation v2.1.4 http://foundation.zurb.com */
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Sha#DF031F Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Sha#DF031F Styles
+----------------------------------------- */
+
+table th { font-weight: bold; }
+table td, table th { padding: 3px 3px; text-align: left; }
+tbody th{
+	width:5%;}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+
+	table.responsive { margin-bottom: 0; }
+	
+/**/		.pinned { position: absolute; left: 0; top: 0; background: #fff; width: 15%; overflow: hidden; overflow-x: scroll; border-right: 1px solid #ccc; border-left: 1px solid #ccc; }
+	.pinned table { border-right: none; border-left: none; width: 100%; }
+	.pinned table th, .pinned table td { white-space: nowrap; }
+	.pinned td:last-child { border-bottom: 0; }
+	
+	div.table-wrapper { position: relative; margin-bottom: 20px; overflow: hidden; border-right: 1px solid #ccc; }
+	div.table-wrapper div.scrollable table { margin-left: 15%; }
+	div.table-wrapper div.scrollable { overflow: scroll; overflow-y: hidden; }	
+
+	table.responsive td, table.responsive th { position: relative; white-space: nowrap; overflow: hidden; }
+	table.responsive th:first-child, table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td { display: none; }
+	
+}
+
+/*レビュー*/
+
+
+.review_section{
+	width:100%;
+}
+
+.review_section .review{
+	width:60%;
+	display:table;
+	 margin:0 auto;
+	 text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.review_section .review li{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+
+}
+.review_section .review li img{
+	width:25px;
+}
+.review_section .review .txt_2{
+	font-size:2rem;
+	vertical-align:middle;
+	color:#DF031F;
+}
+.review_section .review_one{
+	border-top:1px #ccc solid;
+	padding:10px 0 10px 0;
+}
+
+
+.review_one_top{
+	width:90%;
+	display:table;
+	margin:0 auto;
+	vertical-align:middle;
+}
+.review_one_top p{
+	width:60%;
+	display:table-cell;
+	font-size:1.2rem;
+	vertical-align:middle;
+		line-height:1.0rem;
+}
+.review_one_top p span{
+	font-size:0.8rem;
+	line-height:0.8rem;
+}
+.review_one_top p span:before{
+  content: "\A";
+  white-space: pre;
+}
+
+
+.review_one_top .review li img{
+	width:90%;
+	max-width:25px;
+	
+}
+.review_one .review_one_txt{
+	width:90%;
+	margin:0 auto;
+	font-size:1.1rem;
+}
+.review_one .review_one_link{
+	width:90%;
+	margin-left:5%;
+	font-size:1.1rem;
+	text-decoration:underline;
+	display:inline-table;
+	text-align:right;
+}
+	
+	/*登録情報*/
+
+.touroku_section{
+	width:100%;
+	margin-top:10px;
+}
+.touroku_table{
+	width:95%;
+	margin:0 auto;
+	table-layout:fixed;
+	font-size:1.1rem;	
+	margin-top:5px;
+
+}
+.touroku_table.tab1{
+	width:10%;
+}
+.touroku_table.tab2{
+	width:1%;
+}	
+.touroku_table.tab3{
+	width:74%;
+}
+
+#sns{
+	background:#f1f1f1;
+	height:50px;
+	width:95%;
+	margin: 0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:center;
+	padding-top:20px;
+
+}

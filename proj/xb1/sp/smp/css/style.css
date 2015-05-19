@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*------------------------------------------------------------
+	リセット
+------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, figure {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	font-size: 1em;
+}
+body, table, input, textarea, select, option {
+	font-family: HiraKakuProN-W3;
+	font-size: 1em;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/*------------------------------------------------------------
+	リンク
+------------------------------------------------------------*/
+a {
+	color: #333;
+	text-decoration: none;
+}
+a:link {
+}
+a:visited {
+}
+a:hover {
+}
+a:active {
+}
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+html{font-size: 62.5%;}
+body {
+	line-height: 1.5;
+	-webkit-text-size-adjust: none;
+	color: #333;
+}
+
+@media screen and (min-width : 768px){
+    html{ font-size : 80.5%;} 
+}
+ 
+@media screen and (min-width : 1024px) {
+    html{ font-size : 100%}; 
+}
+
+
+.sprite {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-image: url(../images/css_sprite_s.gif);
+	background-size: 33px 132px;
+}
+.fluid_img {
+	width: 100%;
+	height: auto;
+}

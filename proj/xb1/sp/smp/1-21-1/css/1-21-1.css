@@ -1,0 +1,303 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*共通*/
+
+.UserChenge{
+	width:100%;
+	border-top:5px solid #04439B;
+	margin-bottom:10px;
+	}
+
+
+
+.UserChenge .chenge_box_ul{
+	width:95%;
+	margin:0 auto;
+	display:table;
+	font-size:1rem;
+	margin-top:20px;}
+
+
+.UserChenge .chenge_box_ul li{
+	text-align:center;
+	display:table-cell;
+	vertical-align:middle;
+}
+.UserChenge .chenge_box{
+	border:1px solid #ccc;
+	text-align:center;
+	width:30%;
+}
+.UserChenge .chenge_box.active{
+	background:#f1f2f3;
+	font-weight:bold;
+}
+
+.UserChenge .chenge_img{
+	vertical-align:middle;
+}
+.UserChenge .chenge_img img{
+	width:12px;
+}
+.UserChenge .chenge_box a{
+	display:block;
+	width:100%;
+	padding:15px 0 15px 0 ;
+}
+
+.UserChenge .userchenge3 {
+	width:95%;
+	margin:0 auto;
+}
+
+
+.UserChenge h1{
+	padding:15px 5px 10px 0px;
+	color:#044398;
+	font-size:1.4rem;
+	font-weight:bold;
+}
+
+.UserChenge p{
+	display:block;
+	width:95%;
+}
+.UserChenge .btn{
+	background:#ccc;
+	width:100%;
+	padding:15px 0 15px;
+	color:#fff;
+	margin-top:10px;
+	text-align:center;
+	font-weight:bold;
+	display:block;
+}
+
+.UserChenge .btn a{
+	color:#fff;
+	width:100%;
+}
+
+.UserChenge .btn.active{
+	background:#999;
+	-webkit-appearance: none;
+}
+
+/*共通*/
+
+/*1-21-1-2*/
+.UserChenge .check{
+	width:100%;
+	margin-top:10px;
+}
+
+.UserChenge .check h2{
+	width:100%;
+	display:block;
+	vertical-align:middle;
+	text-align:center;
+	background:#f1f2f3;
+	padding:15px 0 15px 0;
+	border-top:1px solid #ccc;
+	font-size:1.2rem;
+}
+.UserChenge .check ul{
+	display:table;
+	width:100%;
+}
+.UserChenge .check li{
+	display:table-cell;
+	width:40%;
+	border-left:1px solid #ccc;
+	border-top:1px solid #ccc;
+	padding:15px 0 15px;
+	padding-left:2.5%;
+	vertical-align:middle;
+}
+.UserChenge .check li.border_r{
+	width:60%;
+	border-right:1px solid #ccc;
+}
+.UserChenge .check ul.border_end{
+	border-bottom:1px solid #ccc;
+}
+
+
+
+/*1-21-1-1*/
+.UserChenge .form_area{
+	width:95%;
+	margin:0 auto;
+}
+.UserChenge .form_area p{
+	margin-top:15px;
+	font-size:1.1rem;
+}
+.UserChenge .form_area p span.mail_popup{
+    position: relative;
+    color: #ffffff;
+    background: red;
+    font-size: 1.1rem ;
+    border: 0px solid red;
+    margin: 20px 10px 20px 0px;
+    padding: 7px 5px 7px 10px;
+    border-radius: 3px;
+}
+.UserChenge .form_area p span.mail_popup:after, .UserChenge .form_area p span.mail_popup:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 0;
+    width: 0;
+}
+.UserChenge .form_area p span.mail_popup:after {
+    left: 40px;
+    border: 5px solid transparent;
+    border-top: 6px solid red;
+}
+.UserChenge .form_area p span.mail_popup:before {
+    left: 40px; 
+    border: 5px solid transparent;
+    border-top: 6px solid red;
+}
+.UserChenge .form_area p span.hissu{
+	margin-left:10px;
+	color:red;
+}
+.UserChenge .check h2 {
+	width:100%;
+	border-bottom:1px solid #ccc;
+	margin-top:15px;
+}
+.UserChenge .form_area input.input {
+	width: 100%;
+	height: 30px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2) inset;
+	border: 1px solid #ccc;
+	border-radius: 7px;        /* CSS3草案 */
+	-webkit-border-radius: 7px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 7px;   /* Firefox用 */
+	font-size:1.0em;
+	padding-left:10px ;
+	margin:0;
+	color:#B9B9B9;
+}
+.UserChenge .form_area input.input2 {
+	width:30%;
+	height: 30px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2) inset;
+	border: 1px solid #ccc;
+	border-radius: 7px;        /* CSS3草案 */
+	-webkit-border-radius: 7px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 7px;   /* Firefox用 */
+	font-size:1.0em;
+	padding-left:10px ;
+	margin:0;
+	color:#B9B9B9;
+}
+.UserChenge .form_area .tel_table{
+	display:table;
+	width:100%;
+	text-align:left;
+
+}
+.UserChenge .form_area .select_table{
+	width:33%;
+	display:table-cell;
+	height:30px;
+	text-align:left;
+	vertical-align:middle;
+	margin-right:5px;
+}
+.UserChenge .form_area .select_table1{
+	width:33%;
+	display:table-cell;
+	height:30px;
+	text-align:left;
+	vertical-align:middle;
+	margin-right:5px;
+}
+
+
+.UserChenge .form_area .input_tel {
+	width:25%;
+	height: 30px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2) inset;
+	border: 1px solid #ccc;
+	border-radius: 7px;        /* CSS3草案 */
+	-webkit-border-radius: 7px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 7px;   /* Firefox用 */
+	font-size:1.0em;
+	padding-left:10px ;
+	margin:0;
+	color:#B9B9B9;
+	display:table-cell;
+}
+
+
+.UserChenge .form_area textarea{
+	width: 93%;
+	height: 30px;
+	box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2) inset;
+	border: 1px solid #ccc;
+	border-radius: 7px;        /* CSS3草案 */
+	-webkit-border-radius: 7px;    /* Safari,Google Chrome用 */
+	-moz-border-radius: 7px;   /* Firefox用 */
+	font-size:1.0em;
+	padding-left:10px ;
+	margin:10px 1% 10px 1%;
+	color:#B9B9B9;
+}
+
+.UserChenge .form_area select{
+	height:30px;
+}
+	
+.UserChenge input.input,.UserChenge .input2, 
+.UserChenge textarea{
+	border:solid 1px #eee;
+	border-radius:7px;
+	background:#fff;
+	-webkit-appearance:none;
+}
+.UserChenge .radio_main{
+	display:table;
+	vertical-align:middle;
+}
+.UserChenge .radio_main .radiolabel,.radio_main .radio{
+	display:table-cell;
+	vertical-align:middle;
+	text-align:right;
+	margin-right:20px;
+}
+input[type="radio"],input[type="checkbox"] {
+    -moz-transform-origin: left center;
+    -moz-transform: scale( 1.5 , 1.5 );
+    -webkit-transform-origin: left center;
+    -webkit-transform: scale( 1.5 , 1.5 );
+}
+.UserChenge .form_area .sports{
+	width:100%;
+	height:30px;
+}
+
+.UserChenge .form_area input.mailmaga{
+	float:left;
+}
+.UserChenge .form_area label.mailmaga{
+	width:90%;
+	margin-left:20px;
+	padding-bottom:10px;
+	clear:left;
+}
+ 
+/*<h2>ログイン情報</h2>
+<ul>
+<li>メールアドレス</li>
+<li class="border_r">xxxxxxxxxxxxxxxxx@xxxxxxxxxxxx.jp</li>
+</ul>
+<ul>
+<li>メールアドレス</li>
+<li class="border_r">xxxxxxxxxxxxxxxxx@xxxxxxxxxxxx.jp</li>
+</ul>
