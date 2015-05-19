@@ -16,7 +16,6 @@
 <script src="../js/head_acd.js"></script>
 <script src="../js/action.js"></script>
 <script src="../js/swiper.jquery.min.js"></script>
-<script src="../js/jquery.js"></script>
 <script src="js/1-14-1-1.js"></script>
 <script src="js/responsive-tables.js"></script>
 
@@ -132,7 +131,7 @@ $(window).load(function(){
 <div id="ItemDetails">
 <!--商品サムネイル※アイコン付-->
 
-<div class="swiper-container" id="s0">
+<div class="swiper-container" id="sw-0">
     <div class="swiper-wrapper">
         <!--div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591.jpg"><span class="new">NEW</span></a></div>
         <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591_2.jpg"></a></div>
@@ -143,7 +142,7 @@ $(window).load(function(){
         <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110.jpg"> <span class="stock">在庫切れ</span></div>
         <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110_5.jpg"></div>
     </div>
-    <div class="swiper-pagination"></div>
+    <div class="swiper-pagination" id="sw-pg-0"></div>
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
@@ -686,57 +685,12 @@ $(window).load(function(){
   <div class="swiper-scrollbar" id="ss3"></div>
 </div>
 </section>
-    <!-- Initialize Swiper -->
-    <script>
-    new Swiper('#s1', {
-        scrollbar: '#ss1',
-        scrollbarHide: false,
-        slidesPerView: '4',
-        centeredSlides: false,
-        spaceBetween: 30,
-        grabCursor: false
-    });
-    </script>
-    <script>
-    new Swiper('#s2', {
-        scrollbar: '#ss2',
-        scrollbarHide: false,
-        slidesPerView: '4',
-        centeredSlides: false,
-        spaceBetween: 30,
-        grabCursor: false
-    });
-    </script>
-    <script>
-    new Swiper('#s3', {
-        scrollbar: '#ss3',
-        scrollbarHide: false,
-        slidesPerView: '4',
-        centeredSlides: false,
-        spaceBetween: 30,
-        grabCursor: false
-    });
-    </script>
- <!---->
- <style>
- .giveMeEllipsis {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
-    -webkit-box-orient: vertical;
-}
-
- </style>
-
 
 <!--関連商品-->
-
 
 </div>
 
 <!--content-1-14-1-1-->
-
 
 <!--footer-content-->
 
@@ -805,21 +759,17 @@ TOPに戻る</div></a>
 <footer id="footer">
 
 	<h1 class="f_logo"><a href="1-14-1-1.html#"><img src="../images/logo_xebio.png" width="100%"></a><br>
-    Copyright 2015 XEBIO CO.LTD.All right reserved.</h1>
+    Copyright 2015 XEBIO CO.LTD.All rights reserved.</h1>
 
 
 </footer>
 <script>
 <!--footer-content-->
 $(document).ready(function() {
-    var swiper = new Swiper('#s0', {
-        // Optional parameters
+    new Swiper('#sw-0', {
         loop: true,
-
-        // If we need pagination
-        pagination: '.swiper-pagination',
-        paginationClickable: '.swiper-pagination',
-        // Navigation arrows
+        pagination: '#sw-pg-0',
+        paginationClickable: '#sw-pg-0',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         spaceBetween: 30
@@ -835,6 +785,32 @@ $(document).ready(function() {
             $('.swiper-button-prev').toggle();
         }
     );*/
+    new Swiper('#s1', {
+        scrollbar: '#ss1',
+        scrollbarHide: false,
+        slidesPerView: '4',
+        centeredSlides: false,
+        spaceBetween: 30,
+        grabCursor: false
+    });
+
+    new Swiper('#s2', {
+        scrollbar: '#ss2',
+        scrollbarHide: false,
+        slidesPerView: '4',
+        centeredSlides: false,
+        spaceBetween: 30,
+        grabCursor: false
+    });
+
+    new Swiper('#s3', {
+        scrollbar: '#ss3',
+        scrollbarHide: false,
+        slidesPerView: '4',
+        centeredSlides: false,
+        spaceBetween: 30,
+        grabCursor: false
+    });
 });
 </script>
 </body>
