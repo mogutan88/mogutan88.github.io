@@ -19,28 +19,6 @@
 <script src="js/jquery.validationEngine.js"></script>
 <script src="js/jquery.validationEngine-ja.js"></script>
 <script src="//jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
-
-
-	<script>
-		  
-		 $(window).ready( function() {
-			$('#postcode1').jpostal({
-				postcode : [
-					'#postcode1',
-					'#postcode2'
-				],
-				address : {
-					'#address1'  : '%3',
-					'#address2'  : '%4%5'
-				}
-			});
-		});
-	jQuery(document).ready(function(){
-	jQuery("#chenge-form").validationEngine();
-});
-	</script>
-
-
 </head>
 
 <body>
@@ -201,7 +179,7 @@
 </p>
 <p>郵便番号（半角数字）<span class="hissu">※必須</span><br>
 
-		〒<input class="input_txt2" type="text" id="postcode1" name="postcode1" maxlength="3"　pattern="[0-9]*"> - <input class="input_txt2" type="text" id="postcode2" name="postcode2" maxlength="4">
+		〒<input class="input_txt2" type="text" id="postcode1" name="postcode1" maxlength="3"　pattern="[0-9]*"> - <input class="input_txt2" type="text" id="postcode2" name="postcode2" maxlength="4"><button id="postal_btn">郵便→住所</button>
      
 
 <p>住所（都道府県） <span class="hissu">※必須</span><br>
@@ -592,5 +570,27 @@ TOPに戻る</div></a>
 </footer>
 
 <!--footer-content-->
+
+<script>
+
+	$(window).ready( function() {
+		$('#postcode1').jpostal({
+			click: '#postal_btn',
+			postcode : [
+				'#postcode1',
+				'#postcode2'
+			],
+			address : {
+				'#address1'  : '%3',
+				'#address2'  : '%4%5'
+			}
+		});
+	});
+	jQuery(document).ready(function(){
+		jQuery("#chenge-form").validationEngine();
+	});
+</script>
+
+
 </body>
 </html>
