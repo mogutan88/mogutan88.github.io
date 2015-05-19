@@ -1,10 +1,125 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=1">
+    <meta name="format-detection" content="telephone=no" />
+
+    <title>SUPER SPORTS XEBIO | HOME</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="css/1-14-1-1.css">
+    <script src="../js/jquery-1.8.1.min.js"></script>
+    <script src="../js/sp.js"></script>
+    <script src="../js/head_acd.js"></script>
+    <script src="../js/action.js"></script>
+    <script src="../js/swiper.jquery.min.js"></script>
+    <script src="js/1-14-1-1.js"></script>
+    <script src="js/responsive-tables.js"></script>
+
 </head>
+
 <body>
 
+<div id="ItemDetails">
+    <!--商品サムネイル※アイコン付-->
+
+    <div class="swiper-container" id="sw-0">
+        <div class="swiper-wrapper">
+            <!--div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591.jpg"><span class="new">NEW</span></a></div>
+            <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591_2.jpg"></a></div>
+            <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110.jpg"> <span class="stock">在庫切れ</span></a></div>
+            <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110_5.jpg"></a></div-->
+            <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591.jpg"><span class="new">NEW</span></div>
+            <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591_2.jpg"></div>
+            <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110.jpg"> <span class="stock">在庫切れ</span></div>
+            <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110_5.jpg"></div>
+        </div>
+        <div class="swiper-pagination" id="sw-pg-0"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        new Swiper('#s1', {
+            scrollbar: '#ss1',
+            scrollbarHide: false,
+            slidesPerView: '4',
+            centeredSlides: false,
+            spaceBetween: 30,
+            grabCursor: false
+        });
+    </script>
+    <script>
+        new Swiper('#s2', {
+            scrollbar: '#ss2',
+            scrollbarHide: false,
+            slidesPerView: '4',
+            centeredSlides: false,
+            spaceBetween: 30,
+            grabCursor: false
+        });
+    </script>
+    <script>
+        new Swiper('#s3', {
+            scrollbar: '#ss3',
+            scrollbarHide: false,
+            slidesPerView: '4',
+            centeredSlides: false,
+            spaceBetween: 30,
+            grabCursor: false
+        });
+    </script>
+    <!---->
+    <style>
+        .giveMeEllipsis {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; /* number of lines to show */
+            -webkit-box-orient: vertical;
+        }
+
+    </style>
+
+
+    <!--関連商品-->
+
+
+</div>
+
+<!--content-1-14-1-1-->
+
+
+
+<script>
+    <!--footer-content-->
+    $(document).ready(function() {
+        var swiper = new Swiper('#sw-0', {
+            loop: true,
+            pagination: '#sw-pg-0',
+            paginationClickable: '#sw-pg-0',
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30
+        });
+        /*
+         $('.swiper-container').hover(
+         function() {
+         $('.swiper-button-next').toggle();
+         $('.swiper-button-prev').toggle();
+         },
+         function() {
+         $('.swiper-button-next').toggle();
+         $('.swiper-button-prev').toggle();
+         }
+         );*/
+    });
+</script>
 </body>
 </html>
