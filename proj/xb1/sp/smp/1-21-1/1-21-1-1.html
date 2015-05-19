@@ -9,48 +9,35 @@
 
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/header_footer.css">
-<link rel="stylesheet" href="../css/swiper.min.css">
 <link rel="stylesheet" href="css/style-flexslider.css">
 <link rel="stylesheet" href="css/1-21-1.css">
-<script src="../js/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" href="css/validationEngine.jquery.css">
 <script src="../js/jquery-1.8.1.min.js"></script>
 <script src="../js/sp.js"></script>
-<script  src="../js/head_acd.js"></script>
-<script type="text/javascript" src="../js/action.js"></script>
-<script type="text/javascript" src="../js/swiper.min.js"></script>
-<script src="../js/jquery.js"></script>
-<script src="js/jquery.flexslider.js"></script>
-<script src="js/responsive-tables.js"></script>
-
-<script>
-// flex slider
-$(window).load(function(){
-  $('.bxslider').bxSlider({
-  auto: false,
-  });
-});
-    </script>
-   <!-- Swiper JS -->
-    <script src="js/swiper.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="http://jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
+<script src="../js/head_acd.js"></script>
+<script src="../js/action.js"></script>
+<script src="js/jquery.validationEngine.js"></script>
+<script src="js/jquery.validationEngine-ja.js"></script>
+<script src="//jpostal.googlecode.com/svn/trunk/jquery.jpostal.js"></script>
 
 
-	<script type="text/javascript">
-		$(window).ready( function() {
-			//$('#postal_btn').jpostal({
+	<script>
+		  
+		 $(window).ready( function() {
 			$('#postcode1').jpostal({
-				click: '#postal_btn',
-				postcode: [
+				postcode : [
 					'#postcode1',
 					'#postcode2'
 				],
-				address: {
-					'#address1': '%3',
-					'#address2': '%4%5'
+				address : {
+					'#address1'  : '%3',
+					'#address2'  : '%4%5'
 				}
 			});
 		});
+	jQuery(document).ready(function(){
+	jQuery("#chenge-form").validationEngine();
+});
 	</script>
 
 
@@ -60,97 +47,32 @@ $(window).load(function(){
 <!--header-content-->
 <header>
   <div class="button-toggle">&#9776;</div>
-			<div class="title"><h1><a href="1-21-1-1.html#"><img src="../images/logo_xebio.png" width="100%">&nbsp;</a></h1></div>
+			<div class="title"><h1><a href="#"><img src="../images/logo_xebio.png" width="100%">&nbsp;</a></h1></div>
   <div class="menu">
 				<ul>
                 <div class="m_left">
-					<li class="back"><a href="1-21-1-1.html#">ご利用案内</a></li>
-					<li class="back"><a href="1-21-1-1.html#">お問い合わせ</a></li>
-					<li class="back"><a href="1-21-1-1.html#">サイトマップ</a></li>
-					<li class="back"><a href="1-21-1-1.html#">プライバシーポリシー</a></li>
+					<li class="back"><a href="#">ご利用案内</a></li>
+					<li class="back"><a href="#">お問い合わせ</a></li>
+					<li class="back"><a href="#">サイトマップ</a></li>
+					<li class="back"><a href="#">プライバシーポリシー</a></li>
 				</div>
                 <div class="m_right">
-					<li class="back"><a href="1-21-1-1.html#">利用規約</a></li>
-					<li class="back"><a href="1-21-1-1.html#">免責事項</a></li>
-					<li class="back"><a href="1-21-1-1.html#">会社概要</a></li>
-					<li class="back"><a href="1-21-1-1.html#">特定商取引法に基づく表記</a></li>
+					<li class="back"><a href="#">利用規約</a></li>
+					<li class="back"><a href="#">免責事項</a></li>
+					<li class="back"><a href="#">会社概要</a></li>
+					<li class="back"><a href="#">特定商取引法に基づく表記</a></li>
 				</div>
 				</ul>
 			</div>
 </header>
 
-<!--
-<section id="login_cart">
-<p class="login_on"><a href="#"> ○○○○○○様</a></p>
-<a href="#" class="cart_btn"><img src="../images/menu_cart.gif" ></a>
-</section>-->
 <section class="login_cart">
 	<dl class="new_member">
-		<dt><h1 class="head_style01"> <a href="1-21-1-1.html#">ログイン</a> <a href="1-21-1-1.html#">新規会員</a></h1></dt>
-		<dd><a href="1-21-1-1.html#" class="cart_kago"><span>0</span><img src="../images/menu_cart.gif" width="100%"></a></dd>
+		<dt><h1 class="head_style01"> <a href="#">ログイン</a> <a href="#">新規会員</a></h1></dt>
+		<dd><a href="#" class="cart_kago"><span>0</span><img src="../images/menu_cart.gif" width="100%"></a></dd>
      </dl>
  </section>
- 
 
-<!--
-<div id="searchBox1">
-		
-	<div id="searchBox1Main">
-	<form class="searchForm1" method="get" action="http://ssx.xebio-online.com/search/result/Index">
-	  <input type="hidden" name="kubun" value="1" />
-        <input type="hidden" name="kubun" value="2" />
-        <input type="hidden" name="kubun" value="3" />
-        <input name="sitem" class="text_area"  value="キーワードを入力" />
-        <div id="searchBox1Sub">	
-
-        <input type="submit" value="検索" class="sarchbox2" width="100%" />
-		</div>        
-	</form>
-    <div id="category_search">
-		<div class="select_menu">
-			<select name="cat" id="select_menu">
-				<option value="" selected="selected">全カテゴリーから</option>
-				<option value="カテゴリ1">カテゴリ1</option>
-				<option value="カテゴリ2">カテゴリ2</option>
-				<option value="カテゴリ3">カテゴリ3</option>
-				<option value="カテゴリ4">カテゴリ4</option>
-				<option value="カテゴリ5">カテゴリ5</option>
-		</select>
-
-		</div>
-        </div>
-
-
-        </div>
-</div>
-</div>-->
-
-
-
-
-<!--header-content-->
-
-<!--
-
-<p id="page-top"><a href="#">TOPへ<br>
-戻る</a></p>
--->
-
-<!--pankuzu
-<div id="pankuzu">
-<article>
-<div id="flame">
-<div id="pan_slider" class="clearfix">
-<p><a href="#">マイページ</a></p>
-<p><a href="#">会員情報変更</a></p>
-<p><a href="#">会員情報変更の確認</a></p>
-<p><a href="#">会員情報変更の完了</a></p>
-<p><a href="#">ぱんくず5</a></p>
-<p><a href="#">ぱんくず4</a></p>
-<p><a href="#">ぱんくず5</a></p>
-</div>
-
-</div>-->
 
 </article>
 </div>
@@ -159,37 +81,31 @@ $(window).load(function(){
 <div class="UserChenge">
 <div id="UserChenge3">
 <ul class="chenge_box_ul">
-<li class="chenge_box active"><a href="1-21-1-1.html#">会員情報の変更</a></li>
+<li class="chenge_box active"><a href="#">会員情報の変更</a></li>
 <li class="chenge_img"><img src="../images/f_right.png"></li>
-<li class="chenge_box"><a href="1-21-1-1.html#">変更内容の確認</a></li>
+<li class="chenge_box"><a href="#">変更内容の確認</a></li>
 <li class="chenge_img"><img src="../images/f_right.png"></li>
-<li class="chenge_box"><a href="1-21-1-1.html#">変更の完了</a></li>
+<li class="chenge_box"><a href="#">変更の完了</a></li>
 </ul>
 
 <section class="userchenge3">
-<h1>変更の内容のご確認</h1>
-<p>以下の内容でお間違いないでしょうか。<br>
-よろしければ、「変更の完了へ進む」ボタンを押してください。
-</p>
+<h1>会員情報の変更</h1>
 </section>
 
 <section class="check">
 
-<form action="http://noted.jp/demo/xebio/sp/smp/1-21-1/************" method="post">
+<form action="./dummy.html" method="get" id="chenge-form" class="formular">
 <h2>ログイン情報</h2>
 <div class="form_area">
-
-<p><span class="mail_popup">必須項目です。半角で入力してください。</span></p>
 <p><label for="email">メールアドレス<span class="hissu">※必須</span></label>
-<input class="input" type="email" name="2"></p>
+<input type="email" class="input_txt1 validate[custom[email]]" placeholder="xxx@xxx.com" name="email"></p>
 
 
 <p><label for="password">パスワード(半角数字)<span class="hissu">※必須</span></label>
-<input class="input" type="password" name="1"></p>
-
+<input class="input_txt1 validate" type="password"  placeholder="パスワードを入力" name="password"></p>
 
 <p><label for="password">パスワード確認<span class="hissu">※必須</span></label>
-<input class="input" type="password" name="3"></p>
+<input class="input_txt1 validate" type="password"  placeholder="パスワードを再度入力" name="password"></p>
 
 </div>
 
@@ -198,17 +114,17 @@ $(window).load(function(){
 <div class="form_area">
 
 <p><label for="お名前">お名前（全角）<span class="hissu">※必須</span></label>
-<input class="input" type="text" name="4"></p>
+<input class="input_txt1" type="text" name="4"></p>
 
 
 <p><span class="mail_popup">必須項目です。全角カタカナで入力してください。</span></p>
 
-<p><label for="フリガナ">メールアドレス<span class="hissu">※必須</span></label>
-<input class="input" type="text" name="5"></p>
+<p><label for="フリガナ">フリガナ<span class="hissu">※必須</span></label>
+<input class="input_txt1" type="text" name="5"></p>
 
 
 <p><label for="ニックネーム">ニックネーム<span class="hissu">※必須</span></label><br>
-<input class="input" type="text" name="6"></p>
+<input class="input_txt1" type="text" name="6"></p>
 
 <p><label for="性別">性別<span class="hissu">※必須</span></label><br>
 <div class="radio_main">
@@ -283,10 +199,11 @@ $(window).load(function(){
 <label for="日" class="select">日</label>
 </div>
 </p>
-
 <p>郵便番号（半角数字）<span class="hissu">※必須</span><br>
 
-		〒<input class="input2" type="text" id="postcode1" name="postcode1" maxlength="3"> - <input class="input2" type="text" id="postcode2" name="postcode2" maxlength="4"><input type="button" id="postal_btn" value="郵便→住所">Push me</input>
+		〒<input class="input_txt2" type="text" id="postcode1" name="postcode1" maxlength="3"　pattern="[0-9]*"> - <input class="input_txt2" type="text" id="postcode2" name="postcode2" maxlength="4">
+     
+
 <p>住所（都道府県） <span class="hissu">※必須</span><br>
 		<select id="address1" name="prefecture">
 			<option value="未選択" selected>（未選択）</option> 
@@ -340,13 +257,13 @@ $(window).load(function(){
 		</select></p>
 
 <p>市区町村<span class="hissu">※必須</span><br>
-<input class="input" type="text" id="address2" name="citytown"></p>
+<input class="input_txt1" type="text" id="address2" name="citytown"></p>
 
 <p>ビル・マンション名<br>
-<input class="input" type="text" id="address3" name="lastaddress"></p>
+<input class="input_txt1" type="text" id="address3" name="lastaddress"></p>
 
 <p class="tel_table"><label for="tel">電話番号<span class="hissu">※必須</span></label><br>
-<input class="input_tel" type="text" name="6">-<input class="input_tel" type="text" name="6">-<input class="input_tel" type="text" name="6">
+<input class="input_tel validate[required]" type="text" name="6">-<input class="input_tel validate[required]" type="text" name="6">-<input class="input_tel validate[required]" type="text" name="6">
 </p>
 
 
@@ -356,7 +273,7 @@ $(window).load(function(){
 よく使うゼビオのお店</span><span class="select_table1"> 都道府県</span><span class="select_table1">　店舗名</span></p>
 
 <p class="tel_table">
-<span class="select_table">
+<span class="select_table2">
 SUPER SPORTS XEBIO
 </span>
 		<span class="select_table"><select id="address_tenpo" name="add">
@@ -422,7 +339,7 @@ SUPER SPORTS XEBIO
        </select></span></p>
        
 <p class="tel_table">
-<span class="select_table">
+<span class="select_table2">
 Victoria L-Breath</span>
 		<span class="select_table"><select id="address_tenpo" name="add">
 			<option value="未選択" selected>（未選択）</option> 
@@ -486,7 +403,7 @@ Victoria L-Breath</span>
 			<option value="○○店">○○店</option>
        </select> <br></span></p>
 <p class="tel_table">
-<span class="select_table">
+<span class="select_table2">
 Victoria Golf</span>
 		<span  class="select_table"><select id="address_tenpo" name="add">
 			<option value="未選択" selected>（未選択）</option> 
@@ -551,7 +468,7 @@ Victoria Golf</span>
 			<option value="○○店">○○店</option>
        </select></span></p>
 <p class="tel_table">
-<span class="select_table">Victoria</span>
+<span class="select_table2">Victoria</span>
 		<span class="select_table"><select id="address_tenpo" name="add">
 			<option value="未選択" selected>（未選択）</option> 
 			<option value="北海道">北海道</option>
@@ -635,7 +552,7 @@ Victoria Golf</span>
 <h2>メールマガジンの設定</h2>
 <div class="form_area">
 <p>配信を希望されるメールマガジンにチェックを入れてください。</p>
-<p><input type="checkbox" name="6" class="mailmaga"><label for="mailmagazin" class="mailmaga">○○○○○○○○に関するニュース</label>
+<p><input type="checkbox" name="6" class="mailmaga"><label for="mailmagazin" class="mailmaga">SUPER SPORTS XEBIOお得ニュース</label>
 </p>
 <p><input type="checkbox" name="6" class="mailmaga"><label for="mailmagazin" class="mailmaga">○○○○○○○○に関するニュース</label>
 </p>
@@ -645,7 +562,7 @@ Victoria Golf</span>
 
 
 <p class="userchenge3" style="margin-top:20px;">
-<input type="submit" value="変更内容の確認へ進む" class="btn active">
+<input type="submit" value="変更内容の確認へ進む" class="submit btn active">
 </p></p>
 </div>
 </form>
@@ -661,76 +578,14 @@ Victoria Golf</span>
 </div>
 </section>
 
-<!--content-1-14-1-1-->
 
-
-<!--footer-content
-
-<div id="footer_cat">
-  <ul class="accordion">
- <li class="back">
-    <p><span>全商品カテゴリー</span></p>
-  <ul>
-      <li class="back"><a href="#">カテゴリー1</a></li>
-      <li class="back"><p><span>カテゴリー2</span></p>
-        　<ul>
-          <li class="back"><a href="#">カテゴリー2</a></li>
-          <li class="back"><a href="#">カテゴリー2</a></li>
-          <li class="back"><a href="#">カテゴリー2</a></li>
-          <li class="back"><a href="#">カテゴリー2</a></li>
-          <li class="back"><a href="#">カテゴリー2</a></li>
-		  <li class="back"><p><span>カテゴリー3</span></p>
-                  　<ul>
-          	        <li class="back"><a href="#">カテゴリー3</a></li>
-                      <li class="back"><a href="#">カテゴリー3</a></li>
-                      <li class="back"><a href="#">カテゴリー3</a></li>
-                      <li class="back"><a href="#">カテゴリー3</a></li>
-                      <li class="back"><a href="#">カテゴリー3</a></li>
-                      </ul>
-                      </li>
-          </ul>
-          </li>
-      <li class="back"><a href="#">カテゴリー1</a></li>
-      <li class="back"><a href="#">カテゴリー1</a></li>
-      <li class="back"><a href="#">カテゴリー1</a></li>
-
-
-    </ul>
-  </li>
-  </ul>
-</div>
- <div class="btn_type02">ゼビオグループのオンラインストア</div>
-<nav class="brand_nav">
-<ul>
-<li class="back"><a href="#"><img src="../images/logo_xebio_f.jpg" width="100%"></a></li>
-<li class="back"><a href="#"><img src="../images/logo_golf_f.jpg" width="100%"></a></li>
-</ul>
-<ul>
-<li class="back"><a href="#"><img src="../images/logo_lbreath_f.jpg" width="100%"></a></li>
-<li class="back"><a href="#"><img src="../images/logo_victoria_f.jpg" width="100%"></a></li>
-
-</ul>
-
-</nav>
-
-<div class="btn_type02">オンラインストアからのお知らせ</div>
-<div id="news">
-<dl>
-<dt>2015/04/09</dt>
-<dd class="kiji">●●●●●店OPEN</dd>
-</dl>
-<dl>
-<dt>2015/04/09</dt>
-<dd class="kiji">●●●●●●●●●●●●●●●●●店OPEN</dd>
-</dl>
-</div>-->
-<a href="1-21-1-1.html#" class="btn_type04"><div><img src="../images/f_top_s.png"><br>
+<a href="#" class="btn_type04"><div><img src="../images/f_top_s.png"><br>
 TOPに戻る</div></a>
 
 
 <footer id="footer">
 
-	<h1 class="f_logo"><a href="1-21-1-1.html#"><img src="../images/logo_xebio.png" width="100%"></a><br>
+	<h1 class="f_logo"><a href="#"><img src="../images/logo_xebio.png" width="100%"></a><br>
     Copyright 2015 XEBIO CO.LTD.All right reserved.</h1>
 
 
