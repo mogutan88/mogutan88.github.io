@@ -773,6 +773,10 @@ $(document).ready(function() {
         $('.swiper-button-next').fadeIn();
         $('.swiper-button-prev').fadeIn();
     });
+    $('.swiper-container').on('touchmove', function() {
+        $('.swiper-button-next').show();
+        $('.swiper-button-prev').show();
+    });
     $('.swiper-container').on('touchend mouseup', function() {
         $('.swiper-button-next').fadeOut(2000);
         $('.swiper-button-prev').fadeOut(2000);
