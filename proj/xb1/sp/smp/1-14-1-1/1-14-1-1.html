@@ -132,7 +132,7 @@ $(window).load(function(){
 <div id="ItemDetails">
 <!--商品サムネイル※アイコン付-->
 
-<div class="swiper-container">
+<div class="swiper-container" id="s0">
     <div class="swiper-wrapper">
         <!--div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591.jpg"><span class="new">NEW</span></a></div>
         <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591_2.jpg"></a></div>
@@ -688,7 +688,7 @@ $(window).load(function(){
 </section>
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper('#s1', {
+    new Swiper('#s1', {
         scrollbar: '#ss1',
         scrollbarHide: false,
         slidesPerView: '4',
@@ -698,7 +698,7 @@ $(window).load(function(){
     });
     </script>
     <script>
-    var swiper = new Swiper('#s2', {
+    new Swiper('#s2', {
         scrollbar: '#ss2',
         scrollbarHide: false,
         slidesPerView: '4',
@@ -708,7 +708,7 @@ $(window).load(function(){
     });
     </script>
     <script>
-    var swiper = new Swiper('#s3', {
+    new Swiper('#s3', {
         scrollbar: '#ss3',
         scrollbarHide: false,
         slidesPerView: '4',
@@ -812,7 +812,7 @@ TOPに戻る</div></a>
 <script>
 <!--footer-content-->
 $(document).ready(function() {
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('#s0', {
         // Optional parameters
         loop: true,
 
