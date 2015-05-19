@@ -774,20 +774,10 @@ $(document).ready(function() {
         $('.swiper-button-prev').toggle();
     });
     $('.swiper-container').on('touchend mouseup', function() {
-        $('.swiper-button-next').toggle();
-        $('.swiper-button-prev').toggle();
+        $('.swiper-button-next').toggle(2000);
+        $('.swiper-button-prev').toggle(2000);
     });
-            /*
-                $('.swiper-container').hover(
-                    function() {
-                        $('.swiper-button-next').toggle();
-                        $('.swiper-button-prev').toggle();
-                    },
-                    function() {
-                        $('.swiper-button-next').toggle();
-                        $('.swiper-button-prev').toggle();
-                    }
-                );*/
+
     new Swiper('#s1', {
         scrollbar: '#ss1',
         scrollbarHide: false,
