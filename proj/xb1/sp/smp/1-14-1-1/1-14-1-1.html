@@ -770,12 +770,12 @@ $(document).ready(function() {
         spaceBetween: 30
     });
     $('.swiper-container').on('touchstart mousedown', function() {
-        $('.swiper-button-next').toggle();
-        $('.swiper-button-prev').toggle();
+        $('.swiper-button-next').fadeIn();
+        $('.swiper-button-prev').fadeIn();
     });
     $('.swiper-container').on('touchend mouseup', function() {
-        $('.swiper-button-next').toggle(2000);
-        $('.swiper-button-prev').toggle(2000);
+        $('.swiper-button-next').fadeOut(2000);
+        $('.swiper-button-prev').fadeOut(2000);
     });
 
     new Swiper('#s1', {
