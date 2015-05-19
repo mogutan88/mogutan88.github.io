@@ -10,17 +10,17 @@
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/header_footer.css">
 <link rel="stylesheet" href="../css/swiper.min.css">
-<link rel="stylesheet" href="css/style-flexslider.css">
 <link rel="stylesheet" href="css/1-14-1-1.css">
 <script src="../js/jquery-1.8.1.min.js"></script>
 <script src="../js/sp.js"></script>
 <script src="../js/head_acd.js"></script>
 <script src="../js/action.js"></script>
+<script src="../js/swiper.jquery.min.js"></script>
 <script src="../js/jquery.js"></script>
-<!--script src="js/jquery.flexslider.js"></script-->
 <script src="js/1-14-1-1.js"></script>
 <script src="js/responsive-tables.js"></script>
 
+<!-- bx slider 削除していいはず
 <script>
 // flex slider
 $(window).load(function(){
@@ -28,10 +28,8 @@ $(window).load(function(){
   auto: false,
   });
 });
-
-
-
 </script>
+-->
 </head>
 
 <body>
@@ -144,18 +142,25 @@ $(window).load(function(){
         <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110.jpg"> <span class="stock">在庫切れ</span></a></div>
         <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110_5.jpg"></a></div>
     </div>
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 </div>
 
-<!-- bxslider -->
-<!--div class="bx-wrapper">
+
+<!-- bxslider 削除していいはず-->
+<!--
+<div class="bx-wrapper">
 <ul class="bxslider">
     <li><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591.jpg"><span class="new">NEW</span></a></li>
   
-    <li><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591_2.jpg"></a></li>
+     <li><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591_2.jpg"></a></li>
     <li><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110.jpg"> <span class="stock">在庫切れ</span></a></li>
     <li><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110_5.jpg"></a></li>
     </ul>
-</div -->
+</div>
+-->
 <!-- bxslider -->
 <!--商品サムネイル※アイコン付-->
 
@@ -803,25 +808,35 @@ TOPに戻る</div></a>
 
 
 </footer>
-<script src="../js/swiper.jquery.min.js"></script>
 <script>
 <!--footer-content-->
 $(document).ready(function() {
-    var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+    var swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
 
-    // If we need pagination
-    pagination: '.swiper-pagination',
+        // If we need pagination
+        pagination: '.swiper-pagination',
+        paginationClickable: '.swiper-pagination',
+        // Navigation arrows
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
 
-    // Navigation arrows
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-
-    // And if we need scrollbar
-    scrollbar: '.swiper-scrollbar',
+        // And if we need scrollbar
+        scrollbar: '.swiper-scrollbar',
     });
+
+    $('.swiper-container').hover(
+        function() {
+            $('.swiper-button-next').toggle();
+            $('.swiper-button-prev').toggle();
+        },
+        function() {
+            $('.swiper-button-next').toggle();
+            $('.swiper-button-prev').toggle();
+        }
+    );
 });
 </script>
 </body>
