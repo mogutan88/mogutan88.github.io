@@ -134,10 +134,14 @@ $(window).load(function(){
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591.jpg"><span class="new">NEW</span></a></div>
+        <!--div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591.jpg"><span class="new">NEW</span></a></div>
         <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591_2.jpg"></a></div>
         <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110.jpg"> <span class="stock">在庫切れ</span></a></div>
-        <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110_5.jpg"></a></div>
+        <div class="swiper-slide"><a href="1-14-1-1.html#"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110_5.jpg"></a></div-->
+        <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591.jpg"><span class="new">NEW</span></div>
+        <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4703591_2.jpg"></div>
+        <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110.jpg"> <span class="stock">在庫切れ</span></div>
+        <div class="swiper-slide"><img src="http://ssx.xebio-online.com/site/resource/cm_images/xebio/0/LINK/4476110_5.jpg"></div>
     </div>
     <div class="swiper-pagination"></div>
     <!-- Add Arrows -->
@@ -820,6 +824,7 @@ $(document).ready(function() {
         prevButton: '.swiper-button-prev',
         spaceBetween: 30
     });
+    $('.swiper-wrapper').touchstart()
 /*
     $('.swiper-container').hover(
         function() {
